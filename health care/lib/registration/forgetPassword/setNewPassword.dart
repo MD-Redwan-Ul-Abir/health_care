@@ -37,10 +37,11 @@ class _set_new_passwordState extends State<set_new_password> {
           padding: const EdgeInsets.all(30.0),
           child: Column(
             children: [
-              const SizedBox(height: 100,),
-              Text("আপনার নতুন পাসওয়ার্ডটি দিন"),
+              const SizedBox(height: 150,),
+              Text("আপনার নতুন পাসওয়ার্ডটি দিন",style: TextStyle(fontSize: 18),),
               const SizedBox(height: 10),
               TextFormField(
+
                 controller: _controllerPassword,
                 obscureText: _obscurePassword,
 

@@ -38,7 +38,7 @@ class _veryfyState extends State<veryfy> {
                   ),
                 ),
                 validator: (String? value) {
-                  if (value == null || value.isEmpty ) {
+                  if (value == null || value.isEmpty || value.length != 4 ) {
                     return "Please enter verification code";
                   } else if(!_NumberRegExp.hasMatch(value)){
                     return "Wrong code";
