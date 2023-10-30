@@ -45,6 +45,8 @@ class _PaindingAppointmentState extends State<PaindingAppointment> {
                               controller.pendingAppointment[index].docId)
                           ?.docName ??
                       "error";
+                  print("Doctor ID : ${controller.pendingAppointment[index].docId}");
+                  print("Doctor Name : ${controller.pendingAppointment[index].docId}");
                   return Card(
                     child: Padding(
                       padding: const EdgeInsets.all(12.0),
