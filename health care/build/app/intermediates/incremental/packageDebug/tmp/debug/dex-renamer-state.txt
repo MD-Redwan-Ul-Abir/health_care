@@ -1,4 +1,4 @@
-#Wed Oct 25 19:22:05 BDT 2023
-base.0=/Volumes/Personal Space/Head sir project/Doctor/health care/build/app/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Tue Oct 31 00:12:51 BDT 2023
+base.0=D\:\\Flutter\\Projects\\health_care\\health care\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
