@@ -10,4 +10,6 @@ com.example.patient_health_care.app-rs-8 D:\Flutter\Projects\health_care\health 
 com.example.patient_health_care.app-mergeDebugResources-9 D:\Flutter\Projects\health_care\health care\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
 com.example.patient_health_care.app-mergeDebugResources-10 D:\Flutter\Projects\health_care\health care\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
 com.example.patient_health_care.app-merged_res-11 D:\Flutter\Projects\health_care\health care\build\app\intermediates\merged_res\debug
-com.example.patient_health_care.app-packaged_res-12 D:\Flutter\Projects\health_care\health care\build\path_provider_android\intermediates\packaged_res\debug
+com.example.patient_health_care.app-packaged_res-12 D:\Flutter\Projects\health_care\health care\build\fluttertoast\intermediates\packaged_res\debug
+com.example.patient_health_care.app-packaged_res-13 D:\Flutter\Projects\health_care\health care\build\path_provider_android\intermediates\packaged_res\debug
+com.example.patient_health_care.app-packaged_res-14 D:\Flutter\Projects\health_care\health care\build\shared_preferences_android\intermediates\packaged_res\debug
