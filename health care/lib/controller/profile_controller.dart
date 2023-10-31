@@ -5,11 +5,11 @@ import 'package:http/http.dart' as http;
 import '../model/response_profile_details.dart';
 import '../utils/custom_toast.dart';
 
-class ProfileController extends GetxController{
-
+class ProfileController extends GetxController {
   String baseUrl = 'https://hiyehealth.com/api';
   bool isLoading = false;
-  var token = Hive.box("accounts").get('token') ?? Hive.box('login').get('token');
+  var token =
+      Hive.box("accounts").get('token') ?? Hive.box('login').get('token');
   List<RpProfileDetails> profileDetailsList = [];
 
   Future<void> getProfileDetails() async {
@@ -30,5 +30,4 @@ class ProfileController extends GetxController{
       customToast(msg: "Something went wrong", isError: true);
     }
   }
-
 }

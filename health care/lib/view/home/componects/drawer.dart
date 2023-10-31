@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';
+import 'package:patient_health_care/controller/profile_controller.dart';
 import 'package:patient_health_care/view/home/Home.dart';
 import 'package:patient_health_care/view/registration/log_in.dart';
 import 'package:patient_health_care/view/screens/appointment/all_apointment.dart';
@@ -28,25 +29,43 @@ class _DraderState extends State<AllDrawer> {
       child: ListView(
         padding: EdgeInsets.zero,
         children: <Widget>[
-          const DrawerHeader(
-            decoration: BoxDecoration(
-              color: Color.fromRGBO(32, 63, 140, 1.0),
-            ),
-            child: Row(
-              children: [
-                Icon(
-                  Icons.apartment_sharp,
-                  size: 30,
-                  color: Colors.white,
-                ),
-                Text(
-                  'হিয়ে',
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 24,
+          GetBuilder<ProfileController>(
+            builder: (controller) => Container(
+              height: 150,
+              decoration: const BoxDecoration(
+                color: Color.fromRGBO(32, 63, 140, 1.0),
+              ),
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: <Widget>[
+                  CircleAvatar(
+                    backgroundColor: Colors.white,
+                    radius: 30,
+                    child: Text(
+                      controller.profileDetailsList[0].data!.name![0],
+                      style: const TextStyle(
+                        color: Color.fromRGBO(32, 63, 140, 1.0),
+                        fontSize: 40,
+                      ),
+                    ),
                   ),
-                ),
-              ],
+                  const SizedBox(height: 10),
+                  Text(
+                    controller.profileDetailsList[0].data!.name!,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 24,
+                    ),
+                  ),
+                  Text(
+                    controller.profileDetailsList[0].data!.email!,
+                    style: const TextStyle(
+                      color: Colors.white,
+                      fontSize: 18,
+                    ),
+                  ),
+                ],
+              ),
             ),
           ),
           ListTile(
