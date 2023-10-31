@@ -34,7 +34,7 @@ class AuthController extends GetxController {
         isLoading.value = false;
       }
     } catch (e) {
-      print('error: $e');
+
       isLoading.value = false;
     }
   }

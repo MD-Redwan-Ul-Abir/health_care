@@ -4,6 +4,8 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:patient_health_care/controller/doctor_controller.dart';
 import 'package:patient_health_care/view/home/componects/drawer.dart';
 
+import '../../controller/profile_controller.dart';
+
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
 
@@ -20,8 +22,10 @@ class _HomepageState extends State<Homepage> {
 
   Future<void> loadData() async {
     Get.put(DoctorController());
+    Get.put(ProfileController());
     WidgetsBinding.instance.addPostFrameCallback((_) async {
       await Get.find<DoctorController>().fetchDoctorList();
+      await Get.find<ProfileController>().getProfileDetails();
     });
   }
 
