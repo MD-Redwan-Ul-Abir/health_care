@@ -278,9 +278,9 @@ Widget bottomTitlesWidget(double value, TitleMeta meta) {
       break;
   }
   return SideTitleWidget(
-    child: text,
     axisSide: meta.axisSide,
     space: 10,
+    child: text,
   );
 }
 
