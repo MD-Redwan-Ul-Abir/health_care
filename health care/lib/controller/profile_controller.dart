@@ -13,21 +13,27 @@ class ProfileController extends GetxController {
   List<RpProfileDetails> profileDetailsList = [];
 
   Future<void> getProfileDetails() async {
-    isLoading = true;
-    update();
-    final response = await http.get(Uri.parse('$baseUrl/profile'),
-        headers: {'Authorization': 'Bearer $token'});
-    if (response.statusCode == 200) {
-      var data = rpProfileDetailsFromJson(response.body);
-      profileDetailsList.clear();
-      profileDetailsList.add(data);
+    try {
+      isLoading = true;
+      update();
+      final response = await http.get(Uri.parse('$baseUrl/profile'),
+          headers: {'Authorization': 'Bearer $token'});
+      if (response.statusCode == 200) {
+        var data = rpProfileDetailsFromJson(response.body);
+        profileDetailsList.clear();
+        profileDetailsList.add(data);
+        isLoading = false;
+        update();
+        print(profileDetailsList[0].data?.name);
+      } else {
+        isLoading = false;
+        update();
+        customToast(msg: "Something went wrong", isError: true);
+      }
+    } catch (e) {
       isLoading = false;
       update();
-      print(profileDetailsList[0].data?.name);
-    } else {
-      isLoading = false;
-      update();
-      customToast(msg: "Something went wrong", isError: true);
+      print("Error: $e");
     }
   }
 }
