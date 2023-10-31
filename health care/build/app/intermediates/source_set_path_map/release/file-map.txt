@@ -1,0 +1,15 @@
+com.example.patient_health_care.app-jetified-window-1.0.0-beta04-0 C:\Users\sifat\.gradle\caches\transforms-3\25cee5f028ac2a6b79fd6278ff5b59e2\transformed\jetified-window-1.0.0-beta04\res
+com.example.patient_health_care.app-jetified-annotation-experimental-1.1.0-1 C:\Users\sifat\.gradle\caches\transforms-3\6c0c163cc77ae6c91f9f7dfcd179c29c\transformed\jetified-annotation-experimental-1.1.0\res
+com.example.patient_health_care.app-core-1.6.0-2 C:\Users\sifat\.gradle\caches\transforms-3\7e9df2ac2213a6bd3cef0f2f27870d79\transformed\core-1.6.0\res
+com.example.patient_health_care.app-jetified-window-java-1.0.0-beta04-3 C:\Users\sifat\.gradle\caches\transforms-3\ae81e06d24c799147c26814497a2a305\transformed\jetified-window-java-1.0.0-beta04\res
+com.example.patient_health_care.app-main-4 C:\Users\sifat\Downloads\Flutter project\Projects\health_care\health care\android\app\src\main\res
+com.example.patient_health_care.app-release-5 C:\Users\sifat\Downloads\Flutter project\Projects\health_care\health care\android\app\src\release\res
+com.example.patient_health_care.app-pngs-6 C:\Users\sifat\Downloads\Flutter project\Projects\health_care\health care\build\app\generated\res\pngs\release
+com.example.patient_health_care.app-resValues-7 C:\Users\sifat\Downloads\Flutter project\Projects\health_care\health care\build\app\generated\res\resValues\release
+com.example.patient_health_care.app-rs-8 C:\Users\sifat\Downloads\Flutter project\Projects\health_care\health care\build\app\generated\res\rs\release
+com.example.patient_health_care.app-mergeReleaseResources-9 C:\Users\sifat\Downloads\Flutter project\Projects\health_care\health care\build\app\intermediates\incremental\release\mergeReleaseResources\merged.dir
+com.example.patient_health_care.app-mergeReleaseResources-10 C:\Users\sifat\Downloads\Flutter project\Projects\health_care\health care\build\app\intermediates\incremental\release\mergeReleaseResources\stripped.dir
+com.example.patient_health_care.app-merged_res-11 C:\Users\sifat\Downloads\Flutter project\Projects\health_care\health care\build\app\intermediates\merged_res\release
+com.example.patient_health_care.app-packaged_res-12 C:\Users\sifat\Downloads\Flutter project\Projects\health_care\health care\build\fluttertoast\intermediates\packaged_res\release
+com.example.patient_health_care.app-packaged_res-13 C:\Users\sifat\Downloads\Flutter project\Projects\health_care\health care\build\path_provider_android\intermediates\packaged_res\release
+com.example.patient_health_care.app-packaged_res-14 C:\Users\sifat\Downloads\Flutter project\Projects\health_care\health care\build\shared_preferences_android\intermediates\packaged_res\release

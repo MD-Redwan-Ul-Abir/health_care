@@ -1,0 +1,4 @@
+#Sun Oct 29 02:07:58 BDT 2023
+base.0=C\:\\Users\\sifat\\Downloads\\Flutter project\\Projects\\health_care\\health care\\build\\app\\intermediates\\dex\\release\\minifyReleaseWithR8\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex
