@@ -15,14 +15,14 @@ class DoctorController extends GetxController {
   List<RpDoctorListmodel> doctorList = [];
   List<AllQuestion> allQuestion = [];
   List<PendingAppt> pendingAppointment = [];
-  var token =
-      Hive.box("accounts").get('token') ?? Hive.box('login').get('token');
+  var token = Hive.box("accounts").get('token') ?? Hive.box('login').get('token');
   Future<void> fetchDoctorList() async {
     try {
       var response =
-          await http.get(Uri.parse('$baseUrl/doctor_list'), headers: {
+          await http.get(Uri.parse('$baseUrl/doctor_list'),
+              headers: {
         'Authorization': 'Bearer $token',
-      });
+      },);
       if (response.statusCode == 200) {
         var data = rpDoctorListmodelFromJsonList(response.body);
         doctorList.clear();

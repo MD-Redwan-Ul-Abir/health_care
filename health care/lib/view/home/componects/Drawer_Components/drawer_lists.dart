@@ -48,7 +48,7 @@ class MyDrawerLists extends StatelessWidget {
                 // Implement Necessary Information
                 Navigator.push(context, MaterialPageRoute(
                   builder: (context) {
-                    return const diabates_info();
+                    return const Dabates_info();
                   },
                 ));
               },

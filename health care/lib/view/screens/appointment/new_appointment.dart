@@ -231,9 +231,7 @@ class _NewAppointmentState extends State<NewAppointment> {
                         Column(
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
-                            controller.isLoading
-                                ? const Center(child: CircularProgressIndicator())
-                                : ElevatedButton(
+                            controller.isLoading ? const Center(child: CircularProgressIndicator()) : ElevatedButton(
                               style: ElevatedButton.styleFrom(
                                 minimumSize: const Size.fromHeight(50),
                                 shape: RoundedRectangleBorder(
