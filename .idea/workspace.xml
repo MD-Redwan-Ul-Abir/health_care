@@ -5,18 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfed6bc8-8ea5-4036-8654-14fbdc39d102" name="Changes" comment="Question &amp; Appointment">
-      <change afterPath="$PROJECT_DIR$/health care/lib/view/home/componects/Drawer_Components/drawer_header.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health care/lib/view/home/componects/Drawer_Components/drawer_lists.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health care/lib/view/screens/question_answer/Answered/answered_question.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health care/lib/model/needed_information_model.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health care/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/health care/.flutter-plugins-dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health care/lib/view/home/componects/drawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/view/home/componects/drawer.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/lib/controller/doctor_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/controller/doctor_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/lib/controller/needed_information_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/controller/needed_information_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/lib/view/home/componects/Drawer_Components/drawer_lists.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/view/home/componects/Drawer_Components/drawer_lists.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/health care/lib/view/screens/appointment/new_appointment.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/view/screens/appointment/new_appointment.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/health care/lib/view/screens/diabetes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/view/screens/diabetes.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health care/lib/view/screens/question_answer/answer/answered_question.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/health care/lib/view/screens/question_answer/answer/response_list.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/view/screens/question_answer/Answered/response_list.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health care/lib/view/screens/question_answer/ask_question.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/view/screens/question_answer/Question_Asking/ask_question.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health care/lib/view/screens/question_answer/not_answered.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/view/screens/question_answer/Question_Not_Answered/not_answered.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
