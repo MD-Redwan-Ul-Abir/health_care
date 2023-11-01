@@ -179,7 +179,6 @@
 
 //Working version 1
 
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:patient_health_care/controller/doctor_controller.dart';
@@ -239,10 +238,10 @@ class _AskQuestionState extends State<AskQuestion> {
                     items: controller.doctorList
                         .map(
                           (e) => DropdownMenuItem(
-                        value: e.id.toString(),
-                        child: Text(e.docName ?? ""),
-                      ),
-                    )
+                            value: e.id.toString(),
+                            child: Text(e.docName ?? ""),
+                          ),
+                        )
                         .toList(),
                     onChanged: (val) {
                       setState(() {
@@ -305,21 +304,21 @@ class _AskQuestionState extends State<AskQuestion> {
                       controller.isLoading
                           ? const CircularProgressIndicator()
                           : ElevatedButton(
-                        style: ElevatedButton.styleFrom(
-                          minimumSize: const Size.fromHeight(50),
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(20),
-                          ),
-                        ),
-                        onPressed: () {
-                          if (_formKey.currentState!.validate()) {
-                            controller.submitQuestion(
-                                _controllerQuestions.text, _selectedVal!);
-                            _formKey.currentState?.reset();
-                          }
-                        },
-                        child: const Text("Submit"),
-                      ),
+                              style: ElevatedButton.styleFrom(
+                                minimumSize: const Size.fromHeight(50),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(20),
+                                ),
+                              ),
+                              onPressed: () {
+                                if (_formKey.currentState!.validate()) {
+                                  controller.submitQuestion(
+                                      _controllerQuestions.text, _selectedVal!);
+                                  _formKey.currentState?.reset();
+                                }
+                              },
+                              child: const Text("Submit"),
+                            ),
                       const SizedBox(
                         height: 10,
                       ),
