@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:get/get.dart';
+import 'package:patient_health_care/view/screens/diabetes.dart';
 import '../../../registration/log_in.dart';
 import '../../../screens/appointment/all_apointment.dart';
 import '../../../screens/appointment/new_appointment.dart';
 import '../../../screens/appointment/painding_appointment.dart';
-import '../../../screens/diabetes.dart';
 import '../../../screens/question_answer/Answered/answered_question.dart';
 import '../../../screens/question_answer/Question_Asking/ask_question.dart';
 import '../../../screens/question_answer/Question_Not_Answered/not_answered.dart';
@@ -25,9 +25,8 @@ class MyDrawerLists extends StatelessWidget {
             leading: const Icon(Icons.dashboard),
             title: const Text('ড্যাশবোর্ড'),
             onTap: () {
-              // Implement All Appoinment
-
               Get.to(() => const Homepage());
+              Get.back();
             }),
         ExpansionTile(
           leading: const Icon(Icons.note_alt),
@@ -36,7 +35,7 @@ class MyDrawerLists extends StatelessWidget {
             ListTile(
               title: const Text('প্রয়োজনীয় তথ্য'),
               onTap: () {
-                Get.to(() => const diabates_info());
+                Get.to(() => const Dabates_info());
               },
             ),
           ],
