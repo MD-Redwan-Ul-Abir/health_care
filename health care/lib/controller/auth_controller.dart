@@ -27,6 +27,8 @@ class AuthController extends GetxController {
       if (response.statusCode == 200) {
         _boxLogin.put('token', loginModel.data!.token!.split('|')[1]);
         _boxLogin.put('name', loginModel.data!.name);
+        _boxLogin.put('email', email);
+        _boxLogin.put(email, password);
         customToast(msg: loginModel.message!);
         Get.offAll(() => const Homepage());
         isLoading.value = false;
@@ -67,6 +69,35 @@ class AuthController extends GetxController {
         isLoading.value = false;
       } else {
         customToast(msg: loginModel.message!, isError: true);
+        isLoading.value = false;
+      }
+    } catch (e) {
+      print('error: $e');
+      isLoading.value = false;
+    }
+  }
+
+  Future<void> changePassword(String oldPwd, String password) async {
+    isLoading.value = true;
+    try {
+      var response = await http.post(
+        Uri.parse('$baseUrl/change/password'),
+        headers: {
+          'Authorization': 'Bearer ${_boxLogin.get('token')}',
+        },
+        body: {
+          'old_password': oldPwd,
+          'password': password,
+          'password_confirmation': password,
+        },
+      );
+      var data = jsonDecode(response.body);
+      if (response.statusCode == 200) {
+        customToast(msg: data['message']);
+        Get.offAll(() => const Homepage());
+        isLoading.value = false;
+      } else {
+        customToast(msg: data['message'], isError: true);
         isLoading.value = false;
       }
     } catch (e) {

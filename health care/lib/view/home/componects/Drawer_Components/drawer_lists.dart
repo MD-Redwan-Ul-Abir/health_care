@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:get/get.dart';
 import 'package:patient_health_care/view/screens/diabetes.dart';
+import 'package:patient_health_care/view/screens/password_change.dart';
 import '../../../registration/log_in.dart';
 import '../../../screens/appointment/all_apointment.dart';
 import '../../../screens/appointment/new_appointment.dart';
@@ -87,6 +88,13 @@ class MyDrawerLists extends StatelessWidget {
               },
             ),
           ],
+        ),
+        ListTile(
+          leading: const Icon(Icons.password),
+          title: const Text('পাসওয়ার্ড পরিবর্তন'),
+          onTap: () {
+            Get.to(() => const PwdChangeScreen());
+          },
         ),
         ListTile(
           leading: const Icon(Icons.logout),
