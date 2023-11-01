@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 
-
 class diabates_info extends StatefulWidget {
 
   const diabates_info({super.key});
@@ -29,7 +28,7 @@ class _diabates_infoState extends State<diabates_info> {
           child: Column(
             children: [
               const SizedBox(height: 50),
-              Text("আপনার রক্তচাপ (Blood Pressure) এর তথ্য প্রদান করুন"),
+              const Text("আপনার রক্তচাপ (Blood Pressure) এর তথ্য প্রদান করুন"),
               const SizedBox(height: 10),
                Column(
                  children: [
@@ -37,7 +36,7 @@ class _diabates_infoState extends State<diabates_info> {
 
                      keyboardType: TextInputType.phone,
                      maxLength: 3,
-                     decoration: InputDecoration(
+                     decoration: const InputDecoration(
                        labelText: "Systole",
                      ),
                    ),
@@ -45,14 +44,23 @@ class _diabates_infoState extends State<diabates_info> {
                    TextFormField(
                      keyboardType: TextInputType.phone,
                      maxLength: 3,
-                     decoration: InputDecoration(
+                     decoration: const InputDecoration(
                        labelText: "Diastolic",
 
                      ),
                    ),
                    const SizedBox(height: 10,),
-                   Text("ডায়াবেটিস (*যদি থাকে)",
-                     style: Theme.of(context).textTheme.bodyMedium,),
+                   // Text("ডায়াবেটিস (*যদি থাকে)",
+                   //   style: Theme.of(context).textTheme.bodyMedium,),
+
+                   RichText(
+                       text: TextSpan(
+                         children: [
+                           TextSpan(text: "ডায়াবেটিস ",style: Theme.of(context).textTheme.bodyMedium),
+                           TextSpan(text: "(*যদি থাকে)",style: Theme.of(context).textTheme.bodyMedium?.copyWith(color: Colors.red)),
+                         ],
+                       )
+                   ),
                    const SizedBox(height: 30,),
                    TextFormField(
                      controller: _controllerBefore_Meal,
