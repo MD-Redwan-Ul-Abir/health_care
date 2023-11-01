@@ -1,0 +1,10 @@
+^C:\USERS\SIFAT\DOWNLOADS\FLUTTER PROJECT\PROJECTS\HEALTH_CARE\HEALTH CARE\BUILD\WINDOWS\CMAKEFILES\4F85AE79A0E5C1DB1198CBFD95322667\INSTALL_FORCE.RULE
+setlocal
+cd .
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

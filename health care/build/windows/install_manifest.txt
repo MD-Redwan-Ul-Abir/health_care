@@ -1,0 +1,13 @@
+C:/Users/sifat/Downloads/Flutter project/Projects/health_care/health care/build/windows/runner/Debug/data/icudtl.dat
+C:/Users/sifat/Downloads/Flutter project/Projects/health_care/health care/build/windows/runner/Debug/flutter_windows.dll
+C:/Users/sifat/Downloads/Flutter project/Projects/health_care/health care/build/windows/runner/Debug/file_selector_windows_plugin.dll
+C:/Users/sifat/Downloads/Flutter project/Projects/health_care/health care/build/windows/runner/Debug/data/flutter_assets/AssetManifest.bin
+C:/Users/sifat/Downloads/Flutter project/Projects/health_care/health care/build/windows/runner/Debug/data/flutter_assets/AssetManifest.json
+C:/Users/sifat/Downloads/Flutter project/Projects/health_care/health care/build/windows/runner/Debug/data/flutter_assets/FontManifest.json
+C:/Users/sifat/Downloads/Flutter project/Projects/health_care/health care/build/windows/runner/Debug/data/flutter_assets/fonts/MaterialIcons-Regular.otf
+C:/Users/sifat/Downloads/Flutter project/Projects/health_care/health care/build/windows/runner/Debug/data/flutter_assets/kernel_blob.bin
+C:/Users/sifat/Downloads/Flutter project/Projects/health_care/health care/build/windows/runner/Debug/data/flutter_assets/NOTICES.Z
+C:/Users/sifat/Downloads/Flutter project/Projects/health_care/health care/build/windows/runner/Debug/data/flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf
+C:/Users/sifat/Downloads/Flutter project/Projects/health_care/health care/build/windows/runner/Debug/data/flutter_assets/packages/fluttertoast/assets/toastify.css
+C:/Users/sifat/Downloads/Flutter project/Projects/health_care/health care/build/windows/runner/Debug/data/flutter_assets/packages/fluttertoast/assets/toastify.js
+C:/Users/sifat/Downloads/Flutter project/Projects/health_care/health care/build/windows/runner/Debug/data/flutter_assets/shaders/ink_sparkle.frag

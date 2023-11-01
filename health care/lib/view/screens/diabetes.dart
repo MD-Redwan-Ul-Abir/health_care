@@ -42,6 +42,18 @@ class DabatesinfoState extends State<Dabates_info> {
                     decoration: const InputDecoration(
                       labelText: "Systole",
                     ),
+                    validator: (value) {
+                      if (value == null ||
+                          value.isEmpty ||
+                          int.tryParse(value) == null) {
+                        return "Please enter valid information.";
+                      } else if (int.tryParse(value)! < 80 ||
+                          int.tryParse(value)! > 140) {
+                        return "valid range 80-140";
+                      } else {
+                        return null;
+                      }
+                    },
                   ),
                   const SizedBox(
                     height: 5,
@@ -53,6 +65,18 @@ class DabatesinfoState extends State<Dabates_info> {
                     decoration: const InputDecoration(
                       labelText: "Diastolic",
                     ),
+                    validator: (value) {
+                      if (value == null ||
+                          value.isEmpty ||
+                          int.tryParse(value) == null) {
+                        return "Please enter valid information.";
+                      } else if (int.tryParse(value)! < 80 ||
+                          int.tryParse(value)! > 140) {
+                        return "valid range 80-140";
+                      } else {
+                        return null;
+                      }
+                    },
                   ),
                   const SizedBox(
                     height: 10,
@@ -86,12 +110,17 @@ class DabatesinfoState extends State<Dabates_info> {
                         borderRadius: BorderRadius.circular(10),
                       ),
                     ),
-                    validator: (String? value) {
-                      if (value == null || value.isEmpty) {
-                        return "Please enter username.";
+                    validator: (value) {
+                      if (value == null ||
+                          value.isEmpty ||
+                          int.tryParse(value) == null) {
+                        return "Please enter valid information.";
+                      } else if (int.tryParse(value)! < 0 ||
+                          int.tryParse(value)! > 100) {
+                        return "valid range 0-100";
+                      } else {
+                        return null;
                       }
-
-                      return null;
                     },
                   ),
                   const SizedBox(
@@ -110,11 +139,16 @@ class DabatesinfoState extends State<Dabates_info> {
                       ),
                     ),
                     validator: (String? value) {
-                      if (value == null || value.isEmpty) {
-                        return "Please enter username.";
+                      if (value == null ||
+                          value.isEmpty ||
+                          int.tryParse(value) == null) {
+                        return "Please enter valid information.";
+                      } else if (int.tryParse(value)! < 0 ||
+                          int.tryParse(value)! > 100) {
+                        return "valid range 0-100";
+                      } else {
+                        return null;
                       }
-
-                      return null;
                     },
                   ),
                   const SizedBox(
@@ -122,36 +156,37 @@ class DabatesinfoState extends State<Dabates_info> {
                   ),
                   GetBuilder<ProfileController>(
                       builder: (profileControllerContext) {
-                    if (profileControllerContext.profileDetailsList.isEmpty) {
-                      return const SizedBox.shrink();
-                    } else if (profileControllerContext
-                            .profileDetailsList[0].data !=
-                        null) {
-                      var age = profileControllerContext
-                          .profileDetailsList[0].data!.age;
-                      var gender = profileControllerContext
-                          .profileDetailsList[0].data!.gender;
+                    // if (profileControllerContext.profileDetailsList.isEmpty) {
+                    //   return const SizedBox.shrink();
+                    // } else if (profileControllerContext
+                    //         .profileDetailsList[0].data !=
+                    //     null) {
+                    //   var age = profileControllerContext
+                    //       .profileDetailsList[0].data!.age;
+                    //   var gender = profileControllerContext
+                    //       .profileDetailsList[0].data!.gender;
 
-                      return GetBuilder<DiabetesController>(
-                          init: DiabetesController(),
-                          builder: (context) {
-                            return context.isLoading
-                                ? const Center(
-                                    child: CircularProgressIndicator(),
-                                  )
-                                : ElevatedButton(
-                                    style: ElevatedButton.styleFrom(
-                                      minimumSize: const Size.fromHeight(50),
-                                      shape: RoundedRectangleBorder(
-                                        borderRadius: BorderRadius.circular(20),
-                                      ),
+                    return GetBuilder<DiabetesController>(
+                        init: DiabetesController(),
+                        builder: (context) {
+                          return context.isLoading
+                              ? const Center(
+                                  child: CircularProgressIndicator(),
+                                )
+                              : ElevatedButton(
+                                  style: ElevatedButton.styleFrom(
+                                    minimumSize: const Size.fromHeight(50),
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(20),
                                     ),
-                                    onPressed: () {
-                                      //implement this function after implemeting api
-
+                                  ),
+                                  onPressed: () {
+                                    if (_formKey.currentState!.validate()) {
                                       var submitData = {
-                                        "age": age,
-                                        "gender": gender,
+                                        "age": profileControllerContext
+                                            .profileDetailsList[0].data!.age,
+                                        "gender": profileControllerContext
+                                            .profileDetailsList[0].data!.gender,
                                         "bp_sys": _systoleController.text,
                                         "bp_dias": _diastolicController.text,
                                         "db_before_meal":
@@ -159,15 +194,16 @@ class DabatesinfoState extends State<Dabates_info> {
                                         "db_after_meal":
                                             _controllerAfterMeal.text,
                                       };
-
                                       context.submitAllDetails(submitData);
-                                    },
-                                    child: const Text("Submit"),
-                                  );
-                          });
-                    } else {
-                      return const SizedBox.shrink();
-                    }
+                                    }
+                                  },
+                                  child: const Text("Submit"),
+                                );
+                        });
+                    // }
+                    // else {
+                    //   return const SizedBox.shrink();
+                    // }
                   }),
                 ],
               ),

@@ -11,6 +11,7 @@ class AuthController extends GetxController {
   String baseUrl = 'https://hiyehealth.com/api';
   final Box _boxLogin = Hive.box('login');
   final Box _boxRegister = Hive.box('accounts');
+  final Box _profile = Hive.box("profileDetails");
   Future<void> login(String email, String password) async {
     isLoading.value = true;
     try {
@@ -34,7 +35,6 @@ class AuthController extends GetxController {
         isLoading.value = false;
       }
     } catch (e) {
-
       isLoading.value = false;
     }
   }
@@ -58,8 +58,10 @@ class AuthController extends GetxController {
           RpLoginModel.fromJson(jsonDecode(response.body));
       if (response.statusCode == 200) {
         _boxRegister.put('token', loginModel.data!.token!.split('|')[1]);
-        _boxRegister.put('name', loginModel.data!.name);
-        _boxRegister.put(email, password);
+        _profile.put('name', name);
+        _profile.put('email', email);
+        _profile.put(name, 'assets/pp.png');
+
         customToast(msg: loginModel.message!);
         Get.offAll(() => const Homepage());
         isLoading.value = false;

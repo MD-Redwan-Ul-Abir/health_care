@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\sifat\Downloads\Flutter project\Projects\health_care\health care\build\windows\CMakeFiles\4f85ae79a0e5c1db1198cbfd95322667\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{6096A05F-0BB9-38DC-B751-B56375E8A5D1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
