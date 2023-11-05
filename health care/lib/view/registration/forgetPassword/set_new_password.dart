@@ -99,11 +99,11 @@ class _SetnewPasswordState extends State<SetnewPassword> {
                 validator: (String? value) {
                   if (value == null || value.isEmpty) {
                     return "Please enter password.";
-                  } else if (value != password) {
+                  } else if (_controllerPassword.text !=
+                      _controllerConFirmPassword.text) {
                     return "Password doesn't match.";
                   }
-
-                  return confirmPass = value;
+                  return null;
                 },
               ),
               const SizedBox(height: 50),

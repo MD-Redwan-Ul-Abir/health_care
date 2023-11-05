@@ -5,6 +5,7 @@ import 'package:http/http.dart' as http;
 import 'package:patient_health_care/view/home/Home.dart';
 import 'package:patient_health_care/model/response_login.dart';
 import 'package:patient_health_care/utils/custom_toast.dart';
+import 'package:patient_health_care/view/registration/log_in.dart';
 
 import '../view/registration/forgetPassword/code_verification.dart';
 import '../view/registration/forgetPassword/set_new_password.dart';
@@ -147,7 +148,7 @@ class AuthController extends GetxController {
         } else if (isSend == false && isDone == true) {
           Get.offAll(() => const SetnewPassword());
         } else {
-          Get.offAll(() => const Homepage());
+          Get.offAll(() => const Login());
         }
         isLoading.value = false;
       } else {

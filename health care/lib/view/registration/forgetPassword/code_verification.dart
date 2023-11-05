@@ -46,10 +46,11 @@ class _VeryfyState extends State<Veryfy> {
                 validator: (String? value) {
                   if (value == null || value.isEmpty) {
                     return "Please enter verification code";
-                  } else if (_controllerCode.text !=
-                      _boxRegister.get('resetOtp')) {
-                    return "Please enter correct code";
                   }
+                  // else if (_controllerCode.text !=
+                  //     _boxRegister.get('resetOtp')) {
+                  //   return "Please enter correct code";
+                  // }
                   return null;
                 },
               ),
