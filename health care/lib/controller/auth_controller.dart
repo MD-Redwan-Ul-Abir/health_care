@@ -6,6 +6,9 @@ import 'package:patient_health_care/view/home/Home.dart';
 import 'package:patient_health_care/model/response_login.dart';
 import 'package:patient_health_care/utils/custom_toast.dart';
 
+import '../view/registration/forgetPassword/code_verification.dart';
+import '../view/registration/forgetPassword/set_new_password.dart';
+
 class AuthController extends GetxController {
   RxBool isLoading = false.obs;
   String baseUrl = 'https://hiyehealth.com/api';
@@ -106,11 +109,54 @@ class AuthController extends GetxController {
     }
   }
 
-  // void logout() async {
-  //   loginData.delete('token');
-  //   loginData.delete('name');
-  //   Get.offAll(() => const Login());
-  // }
-
-  saveUserData() {}
+  Future<void> forgetPassword(
+      {String? email,
+      String? pwd,
+      String? resetToken,
+      String? otp,
+      bool? isDone,
+      required bool isSend}) async {
+    isLoading.value = true;
+    String url1 = '$baseUrl/otp/send';
+    String url2 = '$baseUrl/otp/verify';
+    String url3 = '$baseUrl/reset/pass';
+    try {
+      final response = await http.post(
+        Uri.parse(isSend
+            ? url1
+            : isDone ?? false
+                ? url2
+                : url3),
+        body: isSend
+            ? {'email': email}
+            : isDone ?? false
+                ? {'otp': otp, 'password_reset_token': resetToken}
+                : {
+                    'password': pwd,
+                    'password_confirmation': pwd,
+                    'verify_token': resetToken
+                  },
+      );
+      var data = jsonDecode(response.body);
+      if (response.statusCode == 200) {
+        customToast(msg: data['message']);
+        if (isSend == true) {
+          _boxRegister.put("resetToken", data['password_reset_token']);
+          _boxRegister.put("resetOtp", data['Otp']);
+          Get.to(() => const Veryfy());
+        } else if (isSend == false && isDone == true) {
+          Get.offAll(() => const SetnewPassword());
+        } else {
+          Get.offAll(() => const Homepage());
+        }
+        isLoading.value = false;
+      } else {
+        customToast(msg: 'Invalid or expired OTP!', isError: true);
+        isLoading.value = false;
+      }
+    } catch (e) {
+      print('error: $e');
+      isLoading.value = false;
+    }
+  }
 }

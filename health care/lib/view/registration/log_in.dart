@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:patient_health_care/controller/auth_controller.dart';
-import 'package:patient_health_care/view/registration/forgetPassword/ForgetPass.dart';
 import 'package:patient_health_care/view/registration/Sign_up.dart';
+
+import 'forgetPassword/forget_pass.dart';
 
 class Login extends StatefulWidget {
   const Login({
@@ -136,7 +137,7 @@ class _LoginState extends State<Login> {
                             context,
                             MaterialPageRoute(
                               builder: (context) {
-                                return const forgetpass();
+                                return const Forgetpass();
                               },
                             ),
                           );
