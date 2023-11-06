@@ -1,3 +1,4 @@
+// Old Code not working
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:patient_health_care/controller/doctor_controller.dart';
@@ -47,7 +48,7 @@ class _NewAppointmentState extends State<NewAppointment> {
           padding: const EdgeInsets.symmetric(horizontal: 30.0),
           child: GetBuilder<DoctorController>(
             builder: (controller) {
-              _selectedValue = controller.doctorList[0].id.toString();
+              // _selectedValue = controller.doctorList[0].id.toString();
               return GetBuilder<ProfileController>(
                   builder: (profileController) {
                 return Column(
@@ -62,16 +63,18 @@ class _NewAppointmentState extends State<NewAppointment> {
                     const SizedBox(height: 10),
                     Text(
                       "Patient Email : ${profileController.profileDetailsList[0].data!.email}",
-                      style: TextStyle(fontSize: 18),
+                      style: const TextStyle(fontSize: 18),
                     ),
                     const SizedBox(height: 10),
                     Text(
                       "Patient Phone Number : ${profileController.profileDetailsList[0].data!.phone}",
-                      style: TextStyle(fontSize: 18),
+                      style: const TextStyle(fontSize: 18),
                     ),
                     const SizedBox(height: 20),
                     DropdownButtonFormField(
-                      value: _selectedValue,
+                      // value: _selectedValue,
+                      value: controller.doctorList[0].id.toString(),
+
                       items: controller.doctorList
                           .map(
                             (e) => DropdownMenuItem(
@@ -85,6 +88,14 @@ class _NewAppointmentState extends State<NewAppointment> {
                           _selectedValue = val.toString();
                           print(_selectedValue);
                         });
+                      },
+                      validator: (value) {
+                        if (_selectedValue == null) {
+                          _selectedValue =
+                              controller.doctorList[0].id.toString();
+                        } else {
+                          _selectedValue = value;
+                        }
                       },
                       icon: const Icon(
                         Icons.arrow_drop_down_circle,
@@ -130,7 +141,7 @@ class _NewAppointmentState extends State<NewAppointment> {
                             if (value == null || value.isEmpty) {
                               return "Please enter username.";
                             }
-                            const datePattern = r'^\d{2}-\d{2}-\d{4}$';
+                            const datePattern = r'^\d{1,2}-\d{1,2}-\d{4}$';
                             final RegExp regExp = RegExp(datePattern);
 
                             if (!regExp.hasMatch(value)) {
@@ -212,9 +223,10 @@ class _NewAppointmentState extends State<NewAppointment> {
                       height: 50,
                     ),
                     Column(
+                      crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
                         controller.isLoading
-                            ? const CircularProgressIndicator()
+                            ? const Center(child: CircularProgressIndicator())
                             : ElevatedButton(
                                 style: ElevatedButton.styleFrom(
                                   minimumSize: const Size.fromHeight(50),

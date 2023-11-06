@@ -1,4 +1,5 @@
 import 'dart:async';
+import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:hive/hive.dart';
@@ -33,13 +34,15 @@ class _SplashScreenState extends State<SplashScreen> {
     return Scaffold(
       body: Container(
         color: Colors.blue,
-        child: const Center(
-            child: Text('Welcome',
-                style: TextStyle(
-                  fontSize: 34,
-                  fontWeight: FontWeight.w700,
-                  color: Colors.white,
-                ))),
+        child: Center(
+            child: ZoomIn(
+          child: const CircleAvatar(
+            radius: 100,
+            backgroundImage: AssetImage(
+              'assets/sp.png',
+            ),
+          ),
+        )),
       ),
     );
   }

@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.patient_health_care.app-mergeDebugResources-9:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.example.patient_health_care.app-mergeDebugResources-20:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
-                    "source": "D:\\Flutter\\Projects\\health_care\\health care\\android\\app\\src\\main\\res\\values-night\\styles.xml",
+                    "source": "C:\\Users\\sifat\\Downloads\\Flutter project\\Projects\\health_care\\health care\\android\\app\\src\\main\\res\\values-night\\styles.xml",
                     "from": {
                         "startLines": "3,14",
                         "startColumns": "4,4",
