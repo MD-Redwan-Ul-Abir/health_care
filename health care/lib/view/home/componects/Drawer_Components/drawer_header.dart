@@ -41,7 +41,7 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer> {
                     ? Center(
                   child: Text(
                     menueProfileController.profileDetailsList[0].data?.email?[0] ?? '',
-                    style: TextStyle(fontSize: 24, color: Colors.white),
+                    style: const TextStyle(fontSize: 24, color: Colors.white),
                   ),
                 )
                     : null,

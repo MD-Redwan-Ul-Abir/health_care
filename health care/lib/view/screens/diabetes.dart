@@ -156,6 +156,7 @@ class _Dabates_infoState extends State<Dabates_info> {
                                      ),
                                      onPressed: () {
                                        //implement this function after implemeting api
+                                       print("${age},\n${gender},\n${_systoleController.text},\n${_diastolicController.text},\n${_controllerBefore_Meal.text},\n${_controllerAfter_Meal.text},\n");
 
                                        var submitData = {
                                          "age" : age,

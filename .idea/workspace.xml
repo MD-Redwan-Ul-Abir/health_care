@@ -5,12 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfed6bc8-8ea5-4036-8654-14fbdc39d102" name="Changes" comment="Question &amp; Appointment">
-      <change afterPath="$PROJECT_DIR$/health care/lib/model/needed_information_model.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health care/lib/controller/Blog_Controller/blog_controller.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health care/lib/model/Blog_Model/BlogModel.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health care/lib/view/screens/Blog_Page/blog_page.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/.dart_tool/flutter_build/1b80ff71924a0d3372c6211fcb2133b3/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/health care/.dart_tool/flutter_build/1b80ff71924a0d3372c6211fcb2133b3/.filecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/.dart_tool/flutter_build/1b80ff71924a0d3372c6211fcb2133b3/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/health care/.dart_tool/flutter_build/1b80ff71924a0d3372c6211fcb2133b3/app.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/.dart_tool/flutter_build/1b80ff71924a0d3372c6211fcb2133b3/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/health care/.dart_tool/flutter_build/1b80ff71924a0d3372c6211fcb2133b3/kernel_snapshot.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/.dart_tool/flutter_build/1b80ff71924a0d3372c6211fcb2133b3/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/health care/.dart_tool/flutter_build/1b80ff71924a0d3372c6211fcb2133b3/kernel_snapshot.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/health care/.flutter-plugins-dependencies" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/build/app/intermediates/assets/debug/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/health care/build/app/intermediates/assets/debug/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/kernel_blob.bin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/health care/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/kernel_blob.bin.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/health care/build/app/intermediates/flutter/debug/flutter_assets/kernel_blob.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/build/app/intermediates/flutter/debug/flutter_build.d" beforeDir="false" afterPath="$PROJECT_DIR$/health care/build/app/intermediates/flutter/debug/flutter_build.d" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" beforeDir="false" afterPath="$PROJECT_DIR$/health care/build/app/intermediates/incremental/packageDebug/tmp/debug/dex-renamer-state.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/build/app/outputs/apk/debug/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/health care/build/app/outputs/apk/debug/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/build/app/outputs/flutter-apk/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/health care/build/app/outputs/flutter-apk/app-debug.apk" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/build/app/outputs/flutter-apk/app-debug.apk.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/health care/build/app/outputs/flutter-apk/app-debug.apk.sha1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/build/e5af93aeb062c1faf752195ab72478e5.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/health care/build/e5af93aeb062c1faf752195ab72478e5.cache.dill.track.dill" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/health care/lib/controller/doctor_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/controller/doctor_controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health care/lib/controller/needed_information_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/controller/needed_information_controller.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/lib/model/responce_dortorlist.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/model/responce_doctorlist.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/lib/view/home/componects/Drawer_Components/drawer_header.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/view/home/componects/Drawer_Components/drawer_header.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/health care/lib/view/home/componects/Drawer_Components/drawer_lists.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/view/home/componects/Drawer_Components/drawer_lists.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health care/lib/view/screens/appointment/new_appointment.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/view/screens/appointment/new_appointment.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/health care/lib/view/screens/diabetes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/view/screens/diabetes.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

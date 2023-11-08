@@ -4,7 +4,7 @@ import 'package:get/get.dart';
 import 'package:hive_flutter/hive_flutter.dart';
 import 'package:http/http.dart' as http;
 import 'package:patient_health_care/view/home/Home.dart';
-import 'package:patient_health_care/model/responce_dortorlist.dart';
+import 'package:patient_health_care/model/responce_doctorlist.dart';
 import 'package:patient_health_care/model/response_allquestion.dart';
 import 'package:patient_health_care/model/rp_pending_appointment.dart';
 import 'package:patient_health_care/utils/custom_toast.dart';

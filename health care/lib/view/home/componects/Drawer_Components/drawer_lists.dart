@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:get/get.dart';
+import 'package:patient_health_care/view/screens/Blog_Page/blog_page.dart';
 import '../../../registration/log_in.dart';
+import '../../../screens/RandomUserPage/random_user_page.dart';
 import '../../../screens/appointment/all_apointment.dart';
 import '../../../screens/appointment/new_appointment.dart';
 import '../../../screens/appointment/painding_appointment.dart';
@@ -26,8 +28,8 @@ class MyDrawerLists extends StatelessWidget {
           leading: const Icon(Icons.dashboard),
           title: const Text('ড্যাশবোর্ড'),
           onTap: () {
-            // Implement All Appoinment
 
+            // Implement All Appoinment
             Navigator.pushReplacement(
               context,
               MaterialPageRoute(
@@ -36,6 +38,7 @@ class MyDrawerLists extends StatelessWidget {
                 },
               ),
             );
+
           },
         ),
         ExpansionTile(
@@ -123,6 +126,20 @@ class MyDrawerLists extends StatelessWidget {
               },
             ),
           ],
+        ),
+        ListTile(
+          title: const Text("ব্লগ"),
+          leading: const Icon(Icons.newspaper),
+          onTap: (){
+            Get.to(() => const BlogPage());
+          },
+        ),
+        ListTile(
+          title: const Text("RandomUser"),
+          leading: const Icon(Icons.newspaper),
+          onTap: (){
+            Get.to(() => const RandomUserPage());
+          },
         ),
         ListTile(
           leading: const Icon(Icons.logout),
