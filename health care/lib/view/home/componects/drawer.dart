@@ -171,7 +171,6 @@
 //   }
 // }
 
-
 import 'package:flutter/material.dart';
 // import 'package:get/get.dart';
 // import 'package:hive/hive.dart';
@@ -196,8 +195,6 @@ class AllDrawer extends StatefulWidget {
 }
 
 class _DraderState extends State<AllDrawer> {
-
-
   @override
   Widget build(BuildContext context) {
     return Drawer(

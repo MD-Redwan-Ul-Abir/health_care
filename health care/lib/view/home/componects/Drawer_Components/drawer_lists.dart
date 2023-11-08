@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:hive/hive.dart';
 import 'package:get/get.dart';
-import 'package:patient_health_care/view/screens/Blog_Page/blog_page.dart';
+import 'package:patient_health_care/view/screens/diabetes.dart';
+import 'package:patient_health_care/view/screens/password_change.dart';
 import '../../../registration/log_in.dart';
-import '../../../screens/RandomUserPage/random_user_page.dart';
 import '../../../screens/appointment/all_apointment.dart';
 import '../../../screens/appointment/new_appointment.dart';
 import '../../../screens/appointment/painding_appointment.dart';
-import '../../../screens/diabetes.dart';
 import '../../../screens/question_answer/Answered/answered_question.dart';
 import '../../../screens/question_answer/Question_Asking/ask_question.dart';
 import '../../../screens/question_answer/Question_Not_Answered/not_answered.dart';
@@ -18,29 +17,18 @@ class MyDrawerLists extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     final Box boxLogin = Hive.box("login");
     final Box boxAccount = Hive.box("accounts");
 
     return Column(
       children: [
         ListTile(
-          leading: const Icon(Icons.dashboard),
-          title: const Text('ড্যাশবোর্ড'),
-          onTap: () {
-
-            // Implement All Appoinment
-            Navigator.pushReplacement(
-              context,
-              MaterialPageRoute(
-                builder: (context) {
-                  return const Homepage();
-                },
-              ),
-            );
-
-          },
-        ),
+            leading: const Icon(Icons.dashboard),
+            title: const Text('ড্যাশবোর্ড'),
+            onTap: () {
+              Get.to(() => const Homepage());
+              Get.back();
+            }),
         ExpansionTile(
           leading: const Icon(Icons.note_alt),
           title: const Text('ডায়াবেটিস'),
@@ -48,12 +36,7 @@ class MyDrawerLists extends StatelessWidget {
             ListTile(
               title: const Text('প্রয়োজনীয় তথ্য'),
               onTap: () {
-                // Implement Necessary Information
-                Navigator.push(context, MaterialPageRoute(
-                  builder: (context) {
-                    return const Dabates_info();
-                  },
-                ));
+                Get.to(() => const Dabates_info());
               },
             ),
           ],
@@ -65,31 +48,19 @@ class MyDrawerLists extends StatelessWidget {
             ListTile(
               title: const Text('প্রশ্ন করুন'),
               onTap: () {
-                Navigator.push(context, MaterialPageRoute(
-                  builder: (context) {
-                    return const AskQuestion();
-                  },
-                ));
+                Get.to(() => const AskQuestion());
               },
             ),
             ListTile(
               title: const Text('পেইনডিং প্রশ্ন'),
               onTap: () {
-                Navigator.push(context, MaterialPageRoute(
-                  builder: (context) {
-                    return const NotAnswerd();
-                  },
-                ));
+                Get.to(() => const NotAnswerd());
               },
             ),
             ListTile(
               title: const Text('সকল উত্তর'),
               onTap: () {
-                // Implement All Question/Answer
-                Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context) {
-                      return const AnsWer();
-                    }));
+                Get.to(() => const AnsWer());
               },
             ),
           ],
@@ -101,44 +72,28 @@ class MyDrawerLists extends StatelessWidget {
             ListTile(
               title: const Text('নতুন অ্যাপয়েন্টমেন্ট'),
               onTap: () {
-                Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context) {
-                      return const NewAppointment();
-                    }));
+                Get.to(() => const NewAppointment());
               },
             ),
             ListTile(
               title: const Text('পেন্ডিং এপোয়েনমেন্ট'),
               onTap: () {
-                Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context) {
-                      return const PaindingAppointment();
-                    }));
+                Get.to(() => const PaindingAppointment());
               },
             ),
             ListTile(
               title: const Text('সকল এপোয়েনমেন্ট'),
               onTap: () {
-                Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (context) {
-                      return const AllAppointment();
-                    }));
+                Get.to(() => const AllAppointment());
               },
             ),
           ],
         ),
         ListTile(
-          title: const Text("ব্লগ"),
-          leading: const Icon(Icons.newspaper),
-          onTap: (){
-            Get.to(() => const BlogPage());
-          },
-        ),
-        ListTile(
-          title: const Text("RandomUser"),
-          leading: const Icon(Icons.newspaper),
-          onTap: (){
-            Get.to(() => const RandomUserPage());
+          leading: const Icon(Icons.password),
+          title: const Text('পাসওয়ার্ড পরিবর্তন'),
+          onTap: () {
+            Get.to(() => const PwdChangeScreen());
           },
         ),
         ListTile(

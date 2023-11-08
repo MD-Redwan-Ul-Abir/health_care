@@ -52,32 +52,34 @@ class _NotAnswerdState extends State<NotAnswerd> {
                               controller.allQuestion[index].doctorId)
                           ?.docName ??
                       "error";
-                  return controller.allQuestion[index].status==null ? Card(
-                    child: GestureDetector(
-                      child: Padding(
-                        padding: const EdgeInsets.all(12.0),
-                        child: ListTile(
-                          title: Text(doctorName),
-                          subtitle: Row(
-                            children: [
-                              Expanded(
-                                  child: Text(
-                                      controller.allQuestion[index].question ?? ""
-                                  ),
+                  return controller.allQuestion[index].answer != null
+                      ? const SizedBox.shrink()
+                      : Card(
+                          child: GestureDetector(
+                            child: Padding(
+                              padding: const EdgeInsets.all(12.0),
+                              child: ListTile(
+                                title: Text(doctorName),
+                                subtitle: Row(
+                                  children: [
+                                    Expanded(
+                                      child: Text(controller
+                                              .allQuestion[index].question ??
+                                          ""),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.all(8.0),
+                                      child: Text(controller
+                                          .allQuestion[index].createdAt
+                                          .toString()
+                                          .split(" ")[0]),
+                                    ),
+                                  ],
+                                ),
                               ),
-                              Padding(
-                                padding: const EdgeInsets.all(8.0),
-                                child: Text(controller
-                                    .allQuestion[index].createdAt
-                                    .toString()
-                                    .split(" ")[0]),
-                              ),
-                            ],
+                            ),
                           ),
-                        ),
-                      ),
-                    ),
-                  ) : null;
+                        );
                 },
               ),
       ),
