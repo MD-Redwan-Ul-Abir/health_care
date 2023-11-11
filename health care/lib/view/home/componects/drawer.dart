@@ -172,6 +172,7 @@
 // }
 
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 // import 'package:get/get.dart';
 // import 'package:hive/hive.dart';
 // import 'package:patient_health_care/view/home/Home.dart';
@@ -200,8 +201,11 @@ class _DraderState extends State<AllDrawer> {
     return Drawer(
       child: ListView(
         padding: EdgeInsets.zero,
-        children: const <Widget>[
-          MyHeaderDrawer(),
+        children:  <Widget>[
+          Container(
+            height: Get.height*0.26,
+              child: MyHeaderDrawer()
+          ),
           MyDrawerLists(),
         ],
       ),

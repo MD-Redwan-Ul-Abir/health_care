@@ -46,7 +46,7 @@ class _MyHeaderDrawerState extends State<MyHeaderDrawer> {
           image = XFile(_profile.get(_profile.get('name')) ?? 'assets/pp.png');
           return Stack(
             children: [
-              Container(),
+              // Container(),
               // Image
               Container(
                 alignment: Alignment.center,

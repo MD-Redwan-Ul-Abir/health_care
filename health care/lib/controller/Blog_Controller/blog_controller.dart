@@ -11,6 +11,7 @@ class BlogController extends GetxController{
 
   bool isLoading = false;
   String baseurl = "https://www.hiyehealth.com/api";
+  String imagebaseUrl = "https://www.hiyehealth.com/";
   List<BlogModel> blogList = [];
   var token = Hive.box("accounts").get('token') ?? Hive.box('login').get('token');
 

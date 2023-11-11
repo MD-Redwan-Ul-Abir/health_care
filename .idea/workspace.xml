@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dfed6bc8-8ea5-4036-8654-14fbdc39d102" name="Changes" comment="Question &amp; Appointment">
-      <change afterPath="$PROJECT_DIR$/health care/lib/controller/Blog_Controller/blog_controller.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health care/lib/model/Blog_Model/BlogModel.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/health care/lib/view/screens/Blog_Page/blog_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health care/lib/view/screens/Blog_Page/Blog_Details_Page/blog_details_page.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/health care/lib/view/screens/Blog_Page/Blog_Home_page/blog_home_page.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Dart_Packages.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/health care/.dart_tool/flutter_build/1b80ff71924a0d3372c6211fcb2133b3/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/health care/.dart_tool/flutter_build/1b80ff71924a0d3372c6211fcb2133b3/.filecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/health care/.dart_tool/flutter_build/1b80ff71924a0d3372c6211fcb2133b3/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/health care/.dart_tool/flutter_build/1b80ff71924a0d3372c6211fcb2133b3/app.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/.dart_tool/flutter_build/1b80ff71924a0d3372c6211fcb2133b3/debug_android_application.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/health care/.dart_tool/flutter_build/1b80ff71924a0d3372c6211fcb2133b3/debug_android_application.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/.dart_tool/flutter_build/1b80ff71924a0d3372c6211fcb2133b3/flutter_assets.d" beforeDir="false" afterPath="$PROJECT_DIR$/health care/.dart_tool/flutter_build/1b80ff71924a0d3372c6211fcb2133b3/flutter_assets.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/health care/.dart_tool/flutter_build/1b80ff71924a0d3372c6211fcb2133b3/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/health care/.dart_tool/flutter_build/1b80ff71924a0d3372c6211fcb2133b3/kernel_snapshot.d" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/health care/.dart_tool/flutter_build/1b80ff71924a0d3372c6211fcb2133b3/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/health care/.dart_tool/flutter_build/1b80ff71924a0d3372c6211fcb2133b3/kernel_snapshot.stamp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/.dart_tool/package_config.json" beforeDir="false" afterPath="$PROJECT_DIR$/health care/.dart_tool/package_config.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/health care/.flutter-plugins-dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/health care/.flutter-plugins-dependencies" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/health care/build/app/intermediates/assets/debug/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/health care/build/app/intermediates/assets/debug/flutter_assets/kernel_blob.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/health care/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/kernel_blob.bin.jar" beforeDir="false" afterPath="$PROJECT_DIR$/health care/build/app/intermediates/compressed_assets/debug/out/assets/flutter_assets/kernel_blob.bin.jar" afterDir="false" />
@@ -23,11 +26,13 @@
       <change beforePath="$PROJECT_DIR$/health care/build/app/outputs/flutter-apk/app-debug.apk" beforeDir="false" afterPath="$PROJECT_DIR$/health care/build/app/outputs/flutter-apk/app-debug.apk" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/health care/build/app/outputs/flutter-apk/app-debug.apk.sha1" beforeDir="false" afterPath="$PROJECT_DIR$/health care/build/app/outputs/flutter-apk/app-debug.apk.sha1" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/health care/build/e5af93aeb062c1faf752195ab72478e5.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/health care/build/e5af93aeb062c1faf752195ab72478e5.cache.dill.track.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health care/lib/controller/doctor_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/controller/doctor_controller.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health care/lib/model/responce_dortorlist.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/model/responce_doctorlist.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/lib/controller/Blog_Controller/blog_controller.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/controller/Blog_Controller/blog_controller.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/health care/lib/view/home/componects/Drawer_Components/drawer_header.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/view/home/componects/Drawer_Components/drawer_header.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/health care/lib/view/home/componects/Drawer_Components/drawer_lists.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/view/home/componects/Drawer_Components/drawer_lists.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/health care/lib/view/screens/diabetes.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/view/screens/diabetes.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/lib/view/home/componects/drawer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/health care/lib/view/home/componects/drawer.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/lib/view/screens/Blog_Page/blog_page.dart" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/pubspec.lock" beforeDir="false" afterPath="$PROJECT_DIR$/health care/pubspec.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/health care/pubspec.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/health care/pubspec.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +57,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2WEdsb3VDN2wgBspLJPYusdzFIr" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -62,10 +70,12 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
     &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;ToolWindowChanges.ShowToolbar&quot;: &quot;false&quot;,
     &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
     &quot;com.android.tools.idea.streaming.emulator.zoom.toolbar.visible&quot;: &quot;false&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
@@ -77,6 +87,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Imtiaz Chowdhury\StudioProjects\health_care\health care\lib\view\screens\Blog_Page\Blog_Home_page" />
       <recent name="C:\Users\Imtiaz Chowdhury\StudioProjects\health_care\health care\lib\view\screens\question_answer\Question_Asking" />
       <recent name="C:\Users\Imtiaz Chowdhury\StudioProjects\health_care\health care\lib\view\screens\question_answer\Question_Not_Answered" />
     </key>
@@ -118,7 +129,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Question &amp; Appointment" />
     <option name="LAST_COMMIT_MESSAGE" value="Question &amp; Appointment" />
+    <option name="GROUP_MULTIFILE_MERGE_BY_DIRECTORY" value="true" />
   </component>
 </project>
